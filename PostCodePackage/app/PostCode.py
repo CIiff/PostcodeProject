@@ -1,5 +1,6 @@
 import requests
 
+
 class PostCode():
 
     def __init__(self, postcode):
@@ -13,8 +14,3 @@ class PostCode():
             return result
 
         self.postcodeDict = getPostcodeInfo(self.postcode)
-
-
-
-
-
