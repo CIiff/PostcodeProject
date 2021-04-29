@@ -23,5 +23,5 @@ class PostcodeTests(unittest.TestCase):
         self.assertEqual(self.pc.region(), "London")
 
     def test_postcode(self):
-        self.assertIs(type(self.pc.postcode), str)
-        self.assertEqual(self.pc.postcode, "SE12 0NB")
+        self.assertIs(type(self.pc.post_code()), str)
+        self.assertEqual(self.pc.post_code(), "SE12 0NB")
