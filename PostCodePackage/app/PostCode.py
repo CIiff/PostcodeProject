@@ -17,4 +17,3 @@ class PostCode:
     def post_code(self):
         postcode=self.result['postcode']
         return postcode
-
