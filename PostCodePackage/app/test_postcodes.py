@@ -1,4 +1,4 @@
-from PostCodePackage.app.PostCode import PostCode
+from .post_code import PostCode
 import unittest
 
 

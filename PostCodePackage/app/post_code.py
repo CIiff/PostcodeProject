@@ -1,9 +1,9 @@
 import requests
 
-class PostCode:
+class PostCode():
     def __init__(self,postcode):
         self.postcode = postcode
-        self.result=getPostcodeInfo(postcode)
+        self.result=self.getPostcodeInfo(postcode)
         
     def getPostcodeInfo(self,postcode):
         post_code_req = requests.get(
