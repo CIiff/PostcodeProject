@@ -1,6 +1,6 @@
 from PostCodePackage.app.post_code import PostCode
 
-post_code = "NE14LY"
+post_code = input("Please enter a postcode: ")
 
 post_code_data = PostCode(post_code)
 
