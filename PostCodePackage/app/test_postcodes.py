@@ -1,4 +1,4 @@
-from PostCode import PostCode
+from .post_code import PostCode
 import unittest
 import pytest
 
