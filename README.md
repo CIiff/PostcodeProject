@@ -1,8 +1,8 @@
-#                                        PostcodeProject
+# PostcodeProject
 
-                                           ##Data 21
-                                             ###By
-                              ###Abirame, Andrei , Cliff and Kathryn 
+## Data 21
+**By**
+**Abirame, Andrei , Cliff and Kathryn**
 
-                                        **Version 1.0.0**
+**Version 1.0.0**
 
