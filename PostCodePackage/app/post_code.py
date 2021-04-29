@@ -1,12 +1,11 @@
 import requests
 
-
-class PostCode:
-    def __init__(self, postcode):
+class PostCode():
+    def __init__(self,postcode):
         self.postcode = postcode
-        self.result = getPostcodeInfo(postcode)
-
-    def getPostcodeInfo(self, postcode):
+        self.result=self.getPostcodeInfo(postcode)
+        
+    def getPostcodeInfo(self,postcode):
         post_code_req = requests.get(
             f"http://api.postcodes.io/postcodes/{postcode}")
         self.postcodeDict = (post_code_req.json()['result'])
