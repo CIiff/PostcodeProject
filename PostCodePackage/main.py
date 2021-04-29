@@ -1,7 +1,11 @@
 from PostCodePackage.app.post_code import PostCode
+import configparser
 
-post_code = input("Please enter a postcode: ")
+# Read local `config.ini` file.
+config = configparser.ConfigParser()
+config.read('config.ini')
 
+post_code = config.get('INPUT', 'POSTCODE')
 post_code_data = PostCode(post_code)
 
 print("Country: "+post_code_data.country())
