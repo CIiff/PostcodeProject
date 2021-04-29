@@ -3,7 +3,7 @@
 ## Data 21
 
 ---
-### Contributors
+### Contributors:
 
 **Abirame, Andrei , Cliff and Kathryn**
 
