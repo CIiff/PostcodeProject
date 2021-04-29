@@ -1,6 +1,5 @@
 from .post_code import PostCode
 import unittest
-import pytest
 
 
 class PostcodeTests(unittest.TestCase):
