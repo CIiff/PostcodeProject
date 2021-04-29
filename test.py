@@ -1,17 +1,18 @@
 import requests
 
-
-class PostCode:
+class PostCode():
 
     def __init__(self, postcode):
-        self.result = self.get_post_code_info(postcode)
-        
-    def get_post_code_info(self, postcode):
-        post_code_req = requests.get(
-          f"http://api.postcodes.io/postcodes/{postcode}")
-        post_code_dict = (post_code_req.json()['result'])
-        result = post_code_dict
-        return result
+        self.postcode = postcode
+
+        def getPostcodeInfo(postcode):
+            post_code_req = requests.get(
+                f"http://api.postcodes.io/postcodes/{postcode}")
+            self.postcodeDict = (post_code_req.json()['result'])
+            result = self.postcodeDict
+            return result
+
+        self.postcodeDict = getPostcodeInfo(self.postcode)
 
     def country(self):
         nation = self.result['country']
@@ -32,3 +33,7 @@ class PostCode:
     def post_code(self):
         postcode = self.result['postcode']
         return postcode
+
+
+
+
